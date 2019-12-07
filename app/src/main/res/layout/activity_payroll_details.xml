@@ -34,5 +34,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="made"/>
+        <!--<TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="name"/>
+           <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"/>-->
+    </LinearLayout>
+</ScrollView>
+
+
+
 
 
