@@ -102,6 +102,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void showLogoutDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Logout")
+                .setMessage("Are you sure you want to logout?")
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // todo Continue with logout
+                    }
+                })
+    }
 
 
 
