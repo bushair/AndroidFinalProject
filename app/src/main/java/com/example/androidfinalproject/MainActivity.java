@@ -60,6 +60,21 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.filter, menu);
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_filter) {
+            if (drawer.isDrawerOpen(GravityCompat.END)) {
+                drawer.closeDrawer(GravityCompat.END);
+            } else {
+                drawer.openDrawer(GravityCompat.END);
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
     
+
+
+
 
 
