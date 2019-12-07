@@ -10,30 +10,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="name"/>
+            android:text="Name" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="job"/>
+            android:text="JOB" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="salary"/>
+            android:text="SALARY" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="vehicle"/>
+            android:text="VEHICLE" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="plate"/>
+            android:text="NUM PLATE" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="made"/>
+            android:text="MAKE" />
         <!--<TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
