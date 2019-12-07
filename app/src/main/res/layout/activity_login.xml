@@ -19,3 +19,14 @@
         android:textSize="14sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="16dp" />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="176dp" />
