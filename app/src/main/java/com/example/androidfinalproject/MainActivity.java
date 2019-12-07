@@ -110,7 +110,34 @@ public class MainActivity extends AppCompatActivity {
                         // todo Continue with logout
                     }
                 })
+                .setNegativeButton(android.R.string.no, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
     }
+    private void showHelpDialog() {
+        // TODO: 06/12/2019
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.custom_dialog_layout);
+
+        /*TextView text = (TextView) dialog.findViewById(R.id.text_dialog);
+        text.setText("message to show");*/
+
+        Button dialogButton = (Button) dialog.findViewById(R.id.btn_dialog);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+
+    }
+
+
+
 
 
 
