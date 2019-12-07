@@ -75,6 +75,32 @@ public class MainActivity extends AppCompatActivity {
     private void setUpNavigationView() {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.nav_home:
+                        openFragment(0);
+                        break;
+                    case R.id.nav_employee_payroll:
+                        openFragment(1);
+                        break;
+                    case R.id.nav_list_payroll:
+                        openFragment(2);
+                        break;
+                    case R.id.nav_help:
+                        showHelpDialog();
+                        menuItem.setChecked(false);
+                        break;
+                    case R.id.nav_logout:
+                        showLogoutDialog();
+                        menuItem.setChecked(false);
+                        break;
+                }
+
+                drawer.closeDrawers();
+                return true;
+            }
+        });
+    }
 
 
 
